@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "158546933918",
+    "firebase_url": "https://makor-f8074.firebaseio.com",
+    "project_id": "makor-f8074",
+    "storage_bucket": "makor-f8074.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158546933918:android:c191dffbb6cbded7",
+        "android_client_info": {
+          "package_name": "br.com.valcirjr98.makor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158546933918-7h0ihpuoh7jr3fui00tv59oemn8t0ps3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.valcirjr98.makor",
+            "certificate_hash": "d4fb7596139426bcf422b83def7ead8d83f1930e"
+          }
+        },
+        {
+          "client_id": "158546933918-do0a31ijtcgns7h7hpihr2nagtn9l8b4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtHJgPSx_n8hCzweVvEO8opTGkfCQpnsM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158546933918-do0a31ijtcgns7h7hpihr2nagtn9l8b4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
