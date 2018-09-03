@@ -107,6 +107,7 @@ public class LoginActivity extends AppCompatActivity {
                     abreTelaPrincipal();
 
                 }else{
+                    progressBar.setVisibility(View.GONE);
                     String excecao = "";
                     try{
                         throw task.getException();
