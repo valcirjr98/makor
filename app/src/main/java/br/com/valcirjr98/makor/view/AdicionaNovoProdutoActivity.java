@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Locale;
+
 import br.com.valcirjr98.makor.R;
 import br.com.valcirjr98.makor.model.Cliente;
 import br.com.valcirjr98.makor.model.Produto;
@@ -51,6 +53,9 @@ public class AdicionaNovoProdutoActivity extends AppCompatActivity {
         pesoDoProduto = findViewById(R.id.textPeso);
         precoDoProduto = findViewById(R.id.textPreco);
 
+        Locale locale = new Locale("pt", "BR");
+        precoDoProduto.setLocale(locale);
+
         buttonSalvarProduto = findViewById(R.id.buttonSalvarProduto);
 
         buttonSalvarProduto.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +89,7 @@ public class AdicionaNovoProdutoActivity extends AppCompatActivity {
                 String codigo = codigodoProduto.getText().toString();
                 String nome = nomeDoProduto.getText().toString();
                 String peso = pesoDoProduto.getText().toString();
-                String preco = precoDoProduto.getText().toString().replace("R$", "").replace(",", ".");
+                String preco = precoDoProduto.getText().toString();
 
                 if (nome.isEmpty()) {
                     nomeDoProduto.setError("Campo em branco!");
