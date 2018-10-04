@@ -8,8 +8,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
-import br.com.valcirjr98.makor.MenuPrincipalActivity;
 import br.com.valcirjr98.makor.R;
 import br.com.valcirjr98.makor.utils.ConfiguracaoFirebase;
 
@@ -21,10 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textViewFazerLogin;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         buttonCadastrar = findViewById(R.id.buttonCadastarInicio);
         textViewFazerLogin = findViewById(R.id.textViewFazerLogin);

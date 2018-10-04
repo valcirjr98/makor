@@ -1,9 +1,7 @@
-package br.com.valcirjr98.makor;
+package br.com.valcirjr98.makor.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -12,9 +10,8 @@ import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import br.com.valcirjr98.makor.R;
 import br.com.valcirjr98.makor.utils.ConfiguracaoFirebase;
-import br.com.valcirjr98.makor.view.LoginActivity;
-import br.com.valcirjr98.makor.view.MainActivity;
 
 public class MenuPrincipalActivity extends AppCompatActivity {
 
@@ -36,6 +33,21 @@ public class MenuPrincipalActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         }); */
+
+    }
+
+    public void adicionaProduto(View view){
+        startActivity(new Intent(this, AdicionaNovoProdutoActivity.class));
+
+    }
+
+    public void adicionaCliente(View view){
+        startActivity(new Intent(this, AdicionaNovoClienteActivity.class));
+
+    }
+
+    public void adicionaPedido(View view){
+        startActivity(new Intent(this, AdicionaNovoPedidoActivity.class));
 
     }
 

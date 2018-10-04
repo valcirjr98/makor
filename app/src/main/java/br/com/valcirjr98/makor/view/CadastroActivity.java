@@ -1,6 +1,5 @@
 package br.com.valcirjr98.makor.view;
 
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,7 +17,6 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
-import br.com.valcirjr98.makor.MenuPrincipalActivity;
 import br.com.valcirjr98.makor.R;
 import br.com.valcirjr98.makor.model.Usuario;
 import br.com.valcirjr98.makor.utils.ConfiguracaoFirebase;

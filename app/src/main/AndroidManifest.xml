@@ -19,9 +19,12 @@
         <activity android:name=".view.LoginActivity" />
         <activity android:name=".view.CadastroActivity" />
         <activity
-            android:name=".MenuPrincipalActivity"
+            android:name=".view.MenuPrincipalActivity"
             android:label="@string/title_activity_menu_principal"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.AdicionaNovoPedidoActivity" />
+        <activity android:name=".view.AdicionaNovoProdutoActivity" />
+        <activity android:name=".view.AdicionaNovoClienteActivity" />
     </application>
 
 </manifest>

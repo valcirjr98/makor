@@ -1,4 +1,58 @@
 <resources>
     <string name="app_name">Makor</string>
     <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+    <string name="title_activity_teste">TesteActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="selecione_o_estado">Selecione o estado</string>
+    <string name="shared_config">sharedConfig</string>
+    <string name="id">id</string>
+
+
+    <string-array name="estados">
+        <item>AC</item>
+        <item>AL</item>
+        <item>AM</item>
+        <item>AP</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MG</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>PR</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>RS</item>
+        <item>SC</item>
+        <item>SE</item>
+        <item>SP</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="FormaPagamento">
+        <item>A Prazo</item>
+        <item>A Vista</item>
+    </string-array>
+
+    <string name="title_activity_adiciona_pedido">AdicionaPedido</string>
+    <string name="title_itens">Itens</string>
+    <string name="title_dados">Dados</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="appbar_scrolling_view_behavior" />
 </resources>
+

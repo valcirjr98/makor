@@ -17,10 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
-import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
-import br.com.valcirjr98.makor.MenuPrincipalActivity;
 import br.com.valcirjr98.makor.R;
 import br.com.valcirjr98.makor.model.Usuario;
 import br.com.valcirjr98.makor.utils.ConfiguracaoFirebase;
