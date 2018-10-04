@@ -37,6 +37,7 @@
 
 
     <com.santalu.widget.MaskEditText
+        android:id="@+id/editTextData"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
