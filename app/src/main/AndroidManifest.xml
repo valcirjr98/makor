@@ -25,7 +25,8 @@
         <activity android:name=".view.AdicionaNovoPedidoActivity" />
         <activity android:name=".view.AdicionaNovoProdutoActivity" />
         <activity android:name=".view.AdicionaNovoClienteActivity" />
-        <activity android:name=".Calendario"></activity>
+        <activity android:name=".Calendario" />
+        <activity android:name=".MeusProdutos"></activity>
     </application>
 
 </manifest>
