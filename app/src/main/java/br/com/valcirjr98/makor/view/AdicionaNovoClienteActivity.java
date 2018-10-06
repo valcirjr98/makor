@@ -100,6 +100,26 @@ public class AdicionaNovoClienteActivity extends AppCompatActivity {
             campoNome.setError("Campo em branco!");
             return false;
         }
+        if(cpf.isEmpty()){
+            campoCPF.setError("Campo em branco!");
+            return false;
+        }
+        if(estado.isEmpty()){
+            Toast.makeText(this, "Escolha um estado",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if(municipio.isEmpty()){
+            campoMunicipio.setError("Campo em branco!");
+            return false;
+        }
+        if(endereco.isEmpty()){
+            campoEndereco.setError("Campo em branco!");
+            return false;
+        }
+        if(telefone.isEmpty()){
+            campoTelefone.setError("Campo em branco!");
+            return false;
+        }
 
         cliente = new Cliente();
         cliente.setNome(nome);

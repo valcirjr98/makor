@@ -25,7 +25,7 @@ import br.com.valcirjr98.makor.model.Produto;
 
 public class AdicionaNovoProdutoActivity extends AppCompatActivity {
 
-    private TextInputEditText codigodoProduto;
+    private TextInputEditText codigoDoProduto;
 
     private TextInputEditText nomeDoProduto;
 
@@ -48,7 +48,7 @@ public class AdicionaNovoProdutoActivity extends AppCompatActivity {
 
         produto = (Produto) getIntent().getSerializableExtra("produto");
 
-        codigodoProduto = findViewById(R.id.textCodigo);
+        codigoDoProduto = findViewById(R.id.textCodigo);
         nomeDoProduto = findViewById(R.id.textNomeProduto);
         pesoDoProduto = findViewById(R.id.textPeso);
         precoDoProduto = findViewById(R.id.textPreco);
@@ -86,13 +86,27 @@ public class AdicionaNovoProdutoActivity extends AppCompatActivity {
             }
 
             public boolean capturarProduto() {
-                String codigo = codigodoProduto.getText().toString();
+                String codigo = codigoDoProduto.getText().toString();
                 String nome = nomeDoProduto.getText().toString();
                 String peso = pesoDoProduto.getText().toString();
                 String preco = precoDoProduto.getText().toString();
 
+                if (codigo.isEmpty()) {
+                    codigoDoProduto.setError("Campo em branco!");
+                    return false;
+                }
+
                 if (nome.isEmpty()) {
                     nomeDoProduto.setError("Campo em branco!");
+                    return false;
+                }
+
+                if (peso.isEmpty()) {
+                    pesoDoProduto.setError("Campo em branco!");
+                    return false;
+                }
+                if (preco.isEmpty() || preco.equals("0")) {
+                    precoDoProduto.setError("Campo em branco!");
                     return false;
                 }
 
