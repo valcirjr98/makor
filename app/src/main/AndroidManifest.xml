@@ -26,7 +26,10 @@
         <activity android:name=".view.AdicionaNovoProdutoActivity" />
         <activity android:name=".view.AdicionaNovoClienteActivity" />
         <activity android:name=".Calendario" />
-        <activity android:name=".MeusProdutos"></activity>
+        <activity android:name=".MeusProdutos" />
+        <activity
+            android:name=".MenuPrincipal3"
+            android:label="@string/title_activity_menu_principal3"></activity>
     </application>
 
 </manifest>

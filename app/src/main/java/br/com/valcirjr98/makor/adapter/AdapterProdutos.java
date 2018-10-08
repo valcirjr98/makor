@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.view.View;
 
+import br.com.valcirjr98.makor.MeusProdutos;
 import br.com.valcirjr98.makor.R;
 import br.com.valcirjr98.makor.model.Produto;
 import android.content.Context;
@@ -19,6 +20,11 @@ public class AdapterProdutos extends RecyclerView.Adapter<AdapterProdutos.MyView
     private List <Produto> produtos;
     private Context context;
 
+    public AdapterProdutos(List<Produto> produtos, Context context) {
+        this.context = context;
+        this.produtos = produtos;
+    }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -28,12 +34,16 @@ public class AdapterProdutos extends RecyclerView.Adapter<AdapterProdutos.MyView
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        Produto produto = produtos.get(position);
+        holder.nome.setText(produto.getNome());
+        holder.codigo.setText(produto.getCodigo());
+        holder.preco.setText(produto.getPreco());
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return produtos.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{

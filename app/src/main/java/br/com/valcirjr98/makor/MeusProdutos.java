@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Adapter;
+
+import br.com.valcirjr98.makor.adapter.AdapterProdutos;
 import br.com.valcirjr98.makor.model.Produto;
 
 import java.util.ArrayList;
@@ -14,6 +17,7 @@ public class MeusProdutos extends AppCompatActivity {
 
     private RecyclerView recyclerViewProdutos;
     private List <Produto> produtos = new ArrayList<>();
+    private AdapterProdutos adapterProdutos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,7 @@ public class MeusProdutos extends AppCompatActivity {
 
         recyclerViewProdutos.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewProdutos.setHasFixedSize(true);
+        adapterProdutos = new AdapterProdutos(produtos, this);
 
     }
 }
